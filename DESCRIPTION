@@ -1,0 +1,21 @@
+Package: UsefulStuff
+Type: Package
+Title: Useful Stuff Collection
+Version: 0.1.0
+Authors@R: person("Jolien", "Gay", email = "gay.jolien@hotmail.com", role = c("aut", "cre"))
+Description: A collection of useful stuff learned during Cer2016 course:
+    Package creation, working with GitHub and GitBash, basic phylogeny ex, etc.
+    This is a test to get acquainted with the contents of a package project.
+License: file LICENSE
+LazyData: TRUE
+Suggests:
+  ape,
+  ggplot2,
+  gridExtra,
+  knitr,
+  lintr,
+  rmarkdown,
+  testthat
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
+URL: https://github.com/JolienGay/useful-stuff

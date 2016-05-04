@@ -1,0 +1,67 @@
+##########################################################################
+#
+#				HOW TO:
+#		     push/pull files with Git Bash
+#
+##########################################################################
+
+########## Pull from GitHub, push from local
+# First, go to your GitHub account and make a new repository.
+#	Don't forget to:
+#		- check the box "Initialize this repository with a README"
+#		- add .gitignore: R 
+#		- add a license: GNU General Public License v3.0
+
+
+# Clone your new repository from your GitHub account to your local file 
+git clone https://github.com/JolienGay/example-repository
+
+
+# Set your working directory to the cloned file
+cd example-repository/
+
+
+# Check the contents of your newly cloned file (should contain nothing 
+# yet, but the README you've created)
+ls
+
+
+# After making changes to the local file, push them to your GitHub file 
+# like this:
+git add --all :/
+git commit -m "Useful change"
+
+
+# When previous commands were used for the first time, GitBash wants 
+# you to do the following: 'Please tell me who you are.' 
+git config --global user.email "gay.jolien@hotmail.com"
+git config --global user.name "Jolien Gay"
+
+
+# After configuring account details, try pushing the changes. 
+# You're done when you don't get an error or merge conflict.
+git push
+
+
+# When you do get an error/merge conflict, this is probably because a 
+# contributor to your repository made some changes you didn't pull yet.
+git pull
+
+
+# After the pull, you're stuck in an annoying window. Leave it by typing 
+# the following steps:
+#	- Move your cursor to an empty spot with the arrow buttons
+#	- Type something like 'Trivial'
+#	- Press the escape button, your cursor will now appear in the 
+#	  bottom line of the window
+#	- Type ':w', press enter
+#	- Type ':q', press enter
+
+# The normal window should appear, try pushing again.
+git push
+
+
+
+########## Additional notes
+# cd .. (go a file back)
+# cd ~/Documents/........ (~ =home folder or user folder)
